@@ -1,0 +1,19 @@
+<launch>
+<!-- IMU yaw -->
+
+<group ns="robot_1">
+<param name="tf_prefix" value="robot_1" />
+<arg name="robot_name" value="robot_1"/>
+
+<node pkg="imu_ros" type="imu_ros" name="imu_ros"/>
+
+<include file="$(find ca_driver)/launch/create_2.launch"/>
+
+<include file="$(find robot_1)/launch/urg_node_180.launch"/>
+
+<include file="$(find robot_1)launch/amcl.launch"/>
+</group>
+
+
+
+</launch>
