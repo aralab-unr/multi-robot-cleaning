@@ -13,7 +13,12 @@
 - Ubuntu 16.04 
 - ROS Kinetic
 
-# Package explaination:
+## Technogolgy used:
+- iRobot Create 2
+- Hokuyo laser
+- IMU (BN0055)
+
+# Package explanation:
 
 ## iRobot's Create Autonomy Modifications:
 
