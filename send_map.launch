@@ -1,0 +1,10 @@
+<launch>
+
+<!-- for testing single robot localization -->
+
+<node name="map_sever" pkg="map_server" type="map_server" args="$(find map)/map.yaml">
+   <param name="frame_id" value="/map"/>
+   <remap from="map" to="/map"/>
+</node>
+
+</launch>
