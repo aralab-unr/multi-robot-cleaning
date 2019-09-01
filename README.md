@@ -36,7 +36,7 @@ In the modifications folder, we modified the create_autonomy:
 
 ## Dirt Map:
 
-To create the dirt map, use the teleop_twist_keyboard, vacuum motor, and dirt level to get the datas.
+To create the dirt map, use the teleop_twist_keyboard, vacuum motor, and dirt level to get the datas. For more information: J.   Hess,   M.   Beinhofer,   D.   Kuhner,   P.   Ruchti,   and   W.   Burgard,“Poisson-driven  dirt  maps  for  efficient  robot  cleaning,”IEEE Inter-national Conf. on Robotics and Automation, pp. 2245–2250, 2013.
 
 ## Multi-Robot:
 
