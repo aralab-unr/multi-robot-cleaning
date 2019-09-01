@@ -121,7 +121,8 @@ CreateDriver::CreateDriver(ros::NodeHandle& nh)
   undock_sub_ = nh.subscribe("undock", 10, &CreateDriver::undockCallback, this);
   define_song_sub_ = nh.subscribe("define_song", 10, &CreateDriver::defineSongCallback, this);
   play_song_sub_ = nh.subscribe("play_song", 10, &CreateDriver::playSongCallback, this);
-  yaw_sub_ = nh.subscribe("/yaw_data", 100, &CreateDriver::yawCallBack, this); // imu
+  yaw_sub_ = nh.subscribe("yaw_data", 100, &CreateDriver::yawCallBack, this); // imu
+  vacuum_motor_sub_ = nh.subscribe("dirt_motor", &CreateDriver::vacuumCallBack, this); // vacuum motor
 
   // Setup publishers
   odom_pub_ = nh.advertise<nav_msgs::Odometry>("odom", 30);
@@ -143,6 +144,7 @@ CreateDriver::CreateDriver(ros::NodeHandle& nh)
   bumper_pub_ = nh.advertise<ca_msgs::Bumper>("bumper", 30);
   wheeldrop_pub_ = nh.advertise<std_msgs::Empty>("wheeldrop", 30);
   wheel_joint_pub_ = nh.advertise<sensor_msgs::JointState>("joint_states", 10);
+  dirt_pub_ = nh.advertise<std_msgs::UInt8>("dirt_level", 10);
 
   // Setup diagnostics
   diagnostics_.add("Battery Status", this, &CreateDriver::updateBatteryDiagnostics);
@@ -278,6 +280,11 @@ void CreateDriver::yawCallBack(const std_msgs::Float64ConstPtr& msg)
 {
 	q = tf::createQuaternionMsgFromYaw(msg->data);
 }
+// vacuum
+void CreateDriver::vacuumCallBack(const std_msgs::Float32ConstPtr& msg)
+{
+	robot_->setVacuumMotor(msg->data);
+}
 
 bool CreateDriver::update()
 {
@@ -289,6 +296,7 @@ bool CreateDriver::update()
   publishMode();
   publishBumperInfo();
   publishWheeldrop();
+  publishDirt();
 
   // If last velocity command was sent longer than latch duration, stop robot
   if (ros::Time::now() - last_cmd_vel_time_ >= ros::Duration(latch_duration_))
@@ -632,6 +640,12 @@ void CreateDriver::publishWheeldrop()
 {
   if (robot_->isWheeldrop())
     wheeldrop_pub_.publish(empty_msg_);
+}
+// dirt detect
+void CreateDriver::publishDirt()
+{
+	dirt.data = robot_->getDirtDetect();
+	dirt_pub_.publish(dirt);
 }
 
 void CreateDriver::spinOnce()
