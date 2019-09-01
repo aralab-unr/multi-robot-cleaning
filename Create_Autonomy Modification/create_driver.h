@@ -50,6 +50,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <tf/transform_broadcaster.h>
 #include <tf/tf.h>	// imu
 #include <std_msgs/Float64.h> // imu
+#include <std_msgs/UInt8.h>
 
 #include <limits>
 #include <string>
@@ -82,6 +83,7 @@ private:
   sensor_msgs::JointState joint_state_msg_;
   bool is_running_slowly_;
   geometry_msgs::Quaternion q; // imu
+  std_msgs::UInt8 dirt; // dirt
 
   // ROS params
   std::string dev_;
@@ -104,6 +106,7 @@ private:
   void defineSongCallback(const ca_msgs::DefineSongConstPtr& msg);
   void playSongCallback(const ca_msgs::PlaySongConstPtr& msg);
   void yawCallBack(const std_msgs::Float64ConstPtr& msg); // imu
+  void vacuumCallBack(const std_msgs::Float32ConstPtr& msg); // vacuum
 
   bool update();
   void updateBatteryDiagnostics(diagnostic_updater::DiagnosticStatusWrapper& stat);
@@ -119,6 +122,7 @@ private:
   void publishMode();
   void publishBumperInfo();
   void publishWheeldrop();
+  void publishDirt(); // dirt
 
 protected:
   ros::NodeHandle nh_;
@@ -135,6 +139,7 @@ protected:
   ros::Subscriber define_song_sub_;
   ros::Subscriber play_song_sub_;
   ros::Subscriber yaw_sub_;	// imu
+  ros::Subscriber vacuum_motor_sub_; // vacuum motor
 
   ros::Publisher odom_pub_;
   ros::Publisher clean_btn_pub_;
@@ -155,6 +160,7 @@ protected:
   ros::Publisher bumper_pub_;
   ros::Publisher wheeldrop_pub_;
   ros::Publisher wheel_joint_pub_;
+  ros::Publisher dirt_pub_; // dirt
 
 public:
   explicit CreateDriver(ros::NodeHandle& nh);
