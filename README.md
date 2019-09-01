@@ -1,19 +1,19 @@
 # Multi-Robotic System for cleaning
 
 ## Package installed:
-urg_node
+- urg_node
 
-amcl
+- amcl
 
-map_sever
+- map_sever
 
-gmapping
+- gmapping
 
-create_autonomy (https://github.com/AutonomyLab/create_autonomy)
+- create_autonomy (https://github.com/AutonomyLab/create_autonomy)
 
-libcreate (https://github.com/AutonomyLab/libcreate) **Not required but it's good to test it out to improve your odometry**
+- libcreate (https://github.com/AutonomyLab/libcreate) **Not required but it's good to test ticks and wheel radius to improve your odometry**
 
-serial
+- serial
 
 
 
