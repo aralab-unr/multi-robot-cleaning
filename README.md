@@ -18,6 +18,8 @@
 - Hokuyo laser
 - IMU (BN0055)
 
+![alt text](https://github.com/aralab-unr/multi-robot-cleaning/blob/master/Create_Autonomy%20Modification/68407733_889934048043712_2616492075268440064_n.jpg)     
+
 # Package explanation:
 
 ## iRobot's Create Autonomy Modifications:
