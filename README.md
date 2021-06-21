@@ -1,6 +1,7 @@
 # Multi-Robotic System for cleaning
 
 ## Work
+- This work was done in the [Advance Robotics and Autonmation (ARA) Lab](https://ara.cse.unr.edu/) 
 - [Publication link](https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf)
 
 ## Authors
@@ -22,7 +23,7 @@
 - Ubuntu 16.04 
 - ROS Kinetic
 
-## Technogolgy used:
+## Technology used:
 - iRobot Create 2
 - Hokuyo laser
 - IMU (BN0055)
