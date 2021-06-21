@@ -5,9 +5,9 @@
 - [Publication link](https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf)
 
 ## Authors
-- Chuong Le
-- Anh Quynh Pham
-- Hung La
+- Chuong P. Le
+- Anh Q. Pham
+- Hung M. La
 - David Feil-Seifer
 
 ## Package used:
