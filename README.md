@@ -1,5 +1,14 @@
 # Multi-Robotic System for cleaning
 
+## Work
+- Publication link (https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf)
+
+## Authors
+- Chuong Le
+- Anh Quynh Pham
+- Hung La
+- David Feil-Seifer
+
 ## Package used:
 - urg_node
 - amcl
