@@ -1,6 +1,5 @@
 # Multi-Robotic System for cleaning
 
-## Work
 - This work was done in the [Advance Robotics and Autonmation (ARA) Lab](https://ara.cse.unr.edu/) 
 
 ## Package used:
