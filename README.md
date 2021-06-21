@@ -2,13 +2,6 @@
 
 ## Work
 - This work was done in the [Advance Robotics and Autonmation (ARA) Lab](https://ara.cse.unr.edu/) 
-- [Publication link](https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf)
-
-## Authors
-- Chuong P. Le
-- Anh Q. Pham
-- Hung M. La
-- David Feil-Seifer
 
 ## Package used:
 - urg_node
@@ -103,10 +96,12 @@ On the computer you chose to be the master, command:
 
 - Each robot should have a send node that subscribe to /goal or /goal1 and send the iRobot to the goals using cmd_cel topic while also changing the vacuum motor's power depending on the dirt.
 
-
-
-
-
-Here is a video:
+## Video:
 https://www.youtube.com/watch?v=sqrj5DN1SGQ
+	
+## Reference:
+	C. P. Le, A. Q. Pham, H. M. La, D. Feil-Seifer.  A Multi-Robotic System for Environmental Dirt Cleaning. The 12th IEEE/SICE International Symposium on System Integration (SII), January 12-15, 2020, Hawaii, USA. [PDF](https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf) 
+
+## Contact:
+	[Hung La](hla@unr.edu)
 
