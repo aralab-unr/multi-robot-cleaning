@@ -1,7 +1,7 @@
 # Multi-Robotic System for cleaning
 
 ## Work
-- Publication link (https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf)
+- [Publication link](https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf)
 
 ## Authors
 - Chuong Le
@@ -14,8 +14,8 @@
 - amcl
 - map_sever
 - gmapping
-- create_autonomy (https://github.com/AutonomyLab/create_autonomy)
-- libcreate (https://github.com/AutonomyLab/libcreate) **Not required but it's good to test out ticks and wheel radius to improve your odometry**
+- [create_autonomy](https://github.com/AutonomyLab/create_autonomy)
+- [libcreate](https://github.com/AutonomyLab/libcreate) **Not required but it's good to test out ticks and wheel radius to improve your odometry**
 - serial
 
 ## Sofware used:
