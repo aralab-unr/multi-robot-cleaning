@@ -15,10 +15,10 @@
 - Ubuntu 16.04 
 - ROS Kinetic
 
-## Technology used:
-- iRobot Create 2 <b>x2</b>
-- Hokuyo laser <b>x2</b>
-- IMU (BN0055) <b>x2</b>
+## Technology used for each robot:
+- iRobot Create 2 
+- Hokuyo laser 
+- IMU (BN0055) 
 
 ![alt text](https://github.com/aralab-unr/multi-robot-cleaning/blob/master/Create_Autonomy%20Modification/68407733_889934048043712_2616492075268440064_n.jpg)     
 
