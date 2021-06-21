@@ -102,6 +102,6 @@ https://www.youtube.com/watch?v=sqrj5DN1SGQ
 <b>C. P. Le*</b>, A. Q. Pham, H. M. La, D. Feil-Seifer.  A Multi-Robotic System for Environmental Dirt Cleaning. The 12th IEEE/SICE International Symposium on System Integration (SII), January 12-15, 2020, Hawaii, USA. [PDF](https://ara.cse.unr.edu/wp-content/uploads/2014/12/SII2020_ChuongLe_final.pdf) 
 
 ## Contact:
-- Chuong Le
+- [Chuong Le](chuongl@ou.edu)
 - [Hung La](mailto:hla@unr.edu)
 
